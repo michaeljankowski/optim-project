@@ -9,30 +9,58 @@ To make improvements, the linear model was replaced with LightGBM, a nonlinear d
 The new results confirm the conclusions of the original paper to an even better. These results indicated that risk parity offers higher risk-adjusted returns and a lower maximum drawdown than other portfolios, while maintaining market neutrality, in a greater sense than the original code. Linear models such as Lasso and Elastic Net offer a strong intuitive baseline performance. However, nonlinear models like LightGBM can further improve returns by capturing complex factor interactions. This extension demonstrates that the original framework is flexible and can accommodate modern machine learning models without sacrificing its market-neutral nature.
 
 Results:
+
+
 Lasso:
+
+
 Sharpe Ratio:
+
 Risk Parity            0.621151
+
 MinVar Beta Neutral    0.385258
+
+
 Equally Weighted       0.945686
+
+
 daily_sp500_return      0.59819
 
-Maximum Drawdown
+
+  
+Maximum Drawdown:
+
 Risk Parity           -0.150902
+
 MinVar Beta Neutral   -0.151835
+
 Equally Weighted       -0.23063
+
 daily_sp500_return     -0.33925
+
+LGBM:
+
+
+Sharpe Ratio LGBM:
 
 
 Risk Parity            1.098101
-MinVar Beta Neutral    0.932381
+
+MinVar Beta Neutral    0.932381\
+
 Equally Weighted       1.066428
+
 daily_sp500_return      0.59819
-dtype: Float64
+
 
 Maximum Drawdown LGBM
 
+
 Risk Parity           -0.022467
+
 MinVar Beta Neutral   -0.016234
+
 Equally Weighted      -0.018711
+
 daily_sp500_return    -0.036535
-dtype: Float64
+
