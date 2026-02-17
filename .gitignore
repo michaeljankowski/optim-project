@@ -1,1 +1,3 @@
 cred.env
+docs/results/*.csv
+notebooks/*.csv
